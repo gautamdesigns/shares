@@ -1,73 +1,88 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <link rel="icon" type="image/icon" href="logo.svg" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Marlboro Advance Compact</title>
+<head>
+  <link rel="icon" type="image/icon" href="logo.svg" />
 
-        <link rel="stylesheet" href="styles.css" />
-    </head>
+  <meta charset="UTF-8" />
 
-    <body>
-        <header class="header">
-            <nav class="navbar-left">
-                <img src="logo.svg" alt="Logo" class="logo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                <span class="logo-text"> Marlboro Advance Compact </span>
-            </nav>
-        </header>
+  <title>Share Calculator</title>
 
-        <section class="home" id="home">
-            <div class="users-container">
-                <div class="user-box">
-                    <label for="gautam">Gautam</label>
-                    <input type="number" id="gautam" name="gautam" min="0" step="0.001" placeholder="0.000" />
-                </div>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-                <div class="user-box">
-                    <label for="madhukar">Madhukar</label>
-                    <input type="number" id="madhukar" name="madhukar" min="0" step="0.001" placeholder="0.000" />
-                </div>
+<body>
+  <section class="home" id="home">
+    <!-- ITEM PRICE -->
 
-                <div class="user-box">
-                    <label for="sadhin">Sadhin</label>
-                    <input type="number" id="sadhin" name="sadhin" min="0" step="0.001" placeholder="0.000" />
-                </div>
+    <div class="price-container">
+      <label for="item-price"> Enter Total Price </label>
 
-                <div class="user-box">
-                    <label for="suraj">Suraj</label>
-                    <input type="number" id="suraj" name="suraj" min="0" step="0.001" placeholder="0.000" />
-                </div>
+      <input type="number" id="item-price" name="item-price" min="0" step="0.01" />
+    </div>
 
-                <div class="user-box">
-                    <label for="vivek">Vivek</label>
-                    <input type="number" id="vivek" name="vivek" min="0" step="0.001" placeholder="0.000" />
-                </div>
-            </div>
+    <!-- USERS -->
 
-            <!-- CALCULATE BUTTON -->
-            <div class="calculate-container">
-                <button id="calculate-btn">CALCULATE</button>
-            </div>
+    <div class="users-container">
+      <div class="user-box">
+        <label for="gautam"> Gautam </label>
 
-            <!-- RESULT SECTION -->
-            <div id="result-container"></div>
-        </section>
+        <input type="number" id="gautam" name="gautam" min="0" step="0.001" />
+      </div>
 
-        <footer class="footer">
-            <div class="footer-text">
-                <p>© 2026 All rights reserved.</p>
+      <div class="user-box">
+        <label for="madhukar"> Madhukar </label>
 
-                <p>
-                    Crafted by <strong>Gautam Kumar</strong> with
-                    <span class="heart">❤</span>
-                    and code.
-                </p>
-            </div>
-        </footer>
+        <input type="number" id="madhukar" name="madhukar" min="0" step="0.001" />
+      </div>
 
-        <script src="script.js"></script>
-    </body>
+      <div class="user-box">
+        <label for="sadhin"> Sadhin </label>
+
+        <input type="number" id="sadhin" name="sadhin" min="0" step="0.001" />
+      </div>
+
+      <div class="user-box">
+        <label for="suraj"> Suraj </label>
+
+        <input type="number" id="suraj" name="suraj" min="0" step="0.001" />
+      </div>
+
+      <div class="user-box">
+        <label for="vivek"> Vivek </label>
+
+        <input type="number" id="vivek" name="vivek" min="0" step="0.001" />
+      </div>
+    </div>
+
+    <!-- CALCULATE BUTTON -->
+
+    <div class="calculate-container">
+      <button id="calculate-btn">CALCULATE</button>
+    </div>
+
+    <!-- RESULTS -->
+
+    <div id="result-container"></div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-text">
+      <p>© 2026 All rights reserved.</p>
+
+      <p>
+        Crafted by <strong>Gautam Kumar</strong> with
+        <span class="heart">❤</span>
+        and code.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
